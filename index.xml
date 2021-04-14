@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QuantXVII</title>
+    <link>https://mrcoet.github.io/quantxvii/</link>
+    <description>Recent content on QuantXVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Apr 2021 14:18:37 +0200</lastBuildDate><atom:link href="https://mrcoet.github.io/quantxvii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain Bitcoin</title>
+      <link>https://mrcoet.github.io/quantxvii/post/blockchain-bitcoin/</link>
+      <pubDate>Wed, 14 Apr 2021 14:18:37 +0200</pubDate>
+      
+      <guid>https://mrcoet.github.io/quantxvii/post/blockchain-bitcoin/</guid>
+      <description>BlockChain Basics </description>
+    </item>
+    
+  </channel>
+</rss>
