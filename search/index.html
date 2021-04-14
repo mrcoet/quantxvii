@@ -22,7 +22,7 @@
 
 
 
-<title>Posts - QuantXVII</title>
+<title>Search - QuantXVII</title>
 
 
 <meta name="author" content="mrcoet" />
@@ -31,14 +31,14 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://mrcoet.github.io/quantxvii/post/index.xml" title="QuantXVII" />
+<link rel="alternate" type="application/rss+xml" href="https://mrcoet.github.io/quantxvii/search/index.xml" title="QuantXVII" />
 
-<meta property="og:title" content="Posts" />
-<meta name="twitter:title" content="Posts" />
+<meta property="og:title" content="Search" />
+<meta name="twitter:title" content="Search" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://mrcoet.github.io/quantxvii/post/" /><meta property="og:image" content="https://mrcoet.github.io/img/og.png" />
+<meta property="og:url" content="https://mrcoet.github.io/quantxvii/search/" /><meta property="og:image" content="https://mrcoet.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://mrcoet.github.io/img/og.png" /><meta property="og:updated_time" content="2021-04-14T14:36:28+02:00" />
+<meta name="twitter:image" content="https://mrcoet.github.io/img/og.png" />
 
 
 <style>
@@ -94,43 +94,35 @@
             <div class="col-12 col-md-9 float-left content">
                 
 
-
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://mrcoet.github.io/quantxvii/post/anaconda/">Anaconda</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-04-14</span>
-
-
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tag</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Basics 
-    </div>
+<div class="page-info">
+    <form class="search-form" method="GET">
+        <div class="search-input">
+            <input name="s" type="search" autocapitalize="off" autocomplete="off" autocorrect="off"
+                   spellcheck="false" />
+            <button type="submit"><i class="iconfont icon-search-circle-sharp"></i></button>
+        </div>
+    </form>
 </div>
 
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://mrcoet.github.io/quantxvii/post/blockchain-bitcoin/">Blockchain Bitcoin</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-04-14</span>
-
-
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tag</span>
-
+<div class="search-result-info" style="display: none;"><span>[NUM] results ([TIME] ms)</span></div>
+<div class="search-result-info" style="display: none;"><span>Results not found</span></div>
+<div class="search-result-info" style="display: none;"><span>Failed to load index file</span></div>
+<div id="search-result"></div>
+<script id="search-result-template" type="text/fuse-template">
+    <% for(var i = 0; i < $data.length; i++){ %>
+    <div class="post">
+        <h3 class="post-item post-title-archive">
+            <a href="<%= $data[i].item.permalink %>"><%= $data[i].item.title %></a>
+        </h3>
+        <div class="post-item post-meta-archive">
+            <span><i class="iconfont icon-today-sharp"></i>&nbsp;<%= $data[i].item.date %></span>
+            <span>
+                <i class="iconfont icon-pricetags-sharp"></i>&nbsp;<% if ($data[i].item.tags && $data[i].item.tags.length > 0) { %><% for(var j = 0; j < $data[i].item.tags.length; j++){ %><%= $data[i].item.tags[j] %>&nbsp;<% } %><% } else { %>No tag<% } %>
+            </span>
+        </div>
     </div>
-    <div class="post-item post-summary markdown-body">
-        LINK: How Bitcoin Works Under the Hood
-What is Bitcoin? At its core, Bitcoin is just a digital file that lists accounts and money like a ledger. A copy of this file is maintained on every computer in the Bitcoin network. (update: you don&rsquo;t have to maintain a ledger just to use Bitcoin to send and receive money, this is for people who want to help maintain the system).
-These numbers don’t represent anything in the physical world, they only have value because people are willing to trade real goods and services for a higher number next to their account, and believe that others will do the same.
-    </div>
-</div>
+    <% } %>
+</script>
 
             </div>
             <aside class="col-12 col-md-3 float-left sidebar">
@@ -260,8 +252,6 @@ These numbers don’t represent anything in the physical world, they only have v
     </div>
     
     
-    
-    
   </div>
 </aside>
     </main>
@@ -282,10 +272,8 @@ These numbers don’t represent anything in the physical world, they only have v
 </footer>
 
     
-<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.0/lazysizes.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/art-template@4.13.2/lib/template-web.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 
 
 
