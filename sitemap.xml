@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrcoet.github.io/quantxvii/post/blockchain-bitcoin/</loc>
-    <lastmod>2021-04-14T14:18:37+02:00</lastmod>
+    <loc>https://mrcoet.github.io/quantxvii/post/anaconda/</loc>
+    <lastmod>2021-04-14T14:36:28+02:00</lastmod>
   </url><url>
     <loc>https://mrcoet.github.io/quantxvii/post/</loc>
-    <lastmod>2021-04-14T14:18:37+02:00</lastmod>
+    <lastmod>2021-04-14T14:36:28+02:00</lastmod>
   </url><url>
     <loc>https://mrcoet.github.io/quantxvii/</loc>
+    <lastmod>2021-04-14T14:36:28+02:00</lastmod>
+  </url><url>
+    <loc>https://mrcoet.github.io/quantxvii/post/blockchain-bitcoin/</loc>
     <lastmod>2021-04-14T14:18:37+02:00</lastmod>
   </url>
 </urlset>
